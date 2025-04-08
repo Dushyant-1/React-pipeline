@@ -33,7 +33,7 @@ pipeline {
 
         stage('Build React App') {
             steps {
-                dir('my-react-app') {
+                dir('my-app') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
